@@ -1,9 +1,13 @@
 import os
-
+import csv
 
 def main():
-    file_path = '~/product/log/test.csv'
-    print(os.getcwd())
+    file_path = '~/test.csv'
+    with open(file_path, mode='w') as f:
+        writer = csv.writer(f)
+        header = ['username', 'password']
+        writer.writerow(header)
+        writer.writerow(['testuser', 'testpass'])
     
     
     
