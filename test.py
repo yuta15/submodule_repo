@@ -2,7 +2,7 @@ import os
 import csv
 
 def main():
-    file_path = '~/test.csv'
+    file_path = 'test.csv'
     print(os.getcwd())
     with open(file_path, mode='w') as f:
         writer = csv.writer(f)
